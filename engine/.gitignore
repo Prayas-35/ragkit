@@ -1,0 +1,40 @@
+# Binaries
+/tmp
+/bin
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Build artifacts
+*.out
+*.test
+main
+
+# Vendor directory (if using Go Modules, generally safe to exclude)
+vendor/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Air temporary files
+tmp/
+
+# IDE/editor config
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
