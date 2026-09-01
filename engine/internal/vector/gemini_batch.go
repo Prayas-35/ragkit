@@ -30,7 +30,7 @@ func (g *GeminiEmbedder) Embed(ctx context.Context, text string) ([]float32, err
 
 	resp, err := g.client.Models.EmbedContent(
 		ctx,
-		"gemini-embedding-001",
+		"gemini-embedding-2",
 		[]*genai.Content{content},
 		nil,
 	)
