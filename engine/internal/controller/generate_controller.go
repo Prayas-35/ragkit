@@ -78,6 +78,7 @@ func (ctrl *GenerateController) Query() fiber.Handler {
 
 		answer, err := service.AnswerQuestion(c.Context(), question, chunks, req.History, agentPrompt)
 		if err != nil {
+			fmt.Println("answer generation error:", err)
 			return fiber.NewError(fiber.StatusBadGateway, "failed to generate answer")
 		}
 

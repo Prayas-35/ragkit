@@ -28,7 +28,7 @@ type Response struct {
 	} `json:"choices"`
 }
 
-const defaultGroqModel = "llama-3.3-70b-versatile"
+const defaultGroqModel = "openai/gpt-oss-120b"
 
 func GenerateAnswer(ctx context.Context, prompt string) (string, error) {
 	apiKey := strings.TrimSpace(os.Getenv("GROQ_API_KEY"))
